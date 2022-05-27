@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
+    android:stretchColumns="*"
     tools:context=".GuideActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TableRow>
+        <TextView android:text="운영시간" style="@style/title_style"
+            android:layout_span="2"  />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="평일"/>
+        <TextView android:text="09:00~18:00"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="휴일"/>
+        <TextView android:text="09:00~18:00"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="점심시간"/>
+        <TextView android:text="09:00~18:00"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="오시는 길" style="@style/title_style"
+            android:layout_span="2"  />
+    </TableRow>
+    <TableRow>
+        <ImageView android:src="@drawable/sub01_ico01"/>
+        <TextView android:text="서울시 광평로..."/>
+        <TextView android:id="@+id/img_map"/>
+    </TableRow>
+    <TableRow>
+        <ImageView android:src="@drawable/sub01_ico02"/>
+        <TextView android:text="서울시 광평로..."/>
+    </TableRow>
+    <TableRow>
+        <ImageView android:src="@drawable/sub01_ico03"/>
+        <TextView android:text="서울시 광평로..."/>
+    </TableRow>
+</TableLayout>
